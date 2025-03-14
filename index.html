@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>我的作品集</title>
+    <title>友兮文化 | 作品集</title>
     <style>
+        /* 基础样式 */
         body {
-            font-family: Arial;
+            font-family: 'Arial', sans-serif;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
             background: white;
         }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* 顶部导航栏 */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .logo {
+            font-family: 'Georgia', serif;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            letter-spacing: 2px;
+        }
+        .nav {
+            display: flex;
+            gap: 30px;
+        }
+        .nav a {
+            font-size: 16px;
+            color: #666;
+            transition: color 0.3s ease;
+        }
+        .nav a:hover {
+            color: #000;
+        }
+
+        /* 作品展示区 */
         .gallery {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
+            gap: 40px; /* 间距40px */
         }
         .project-item {
             position: relative;
             overflow: hidden;
             border-radius: 12px;
-            height: 390px; /* 固定高度 */
+            height: 477px; /* 954/2 */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -54,10 +88,8 @@
             font-size: 1.5em;
             color: #000;
         }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+
+        /* 响应式设计 */
         @media (max-width: 768px) {
             .gallery {
                 grid-template-columns: 1fr;
@@ -65,14 +97,29 @@
             .project-item {
                 height: 300px;
             }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- 顶部导航栏 -->
+    <div class="header">
+        <div class="logo">友兮文化</div>
+        <div class="nav">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+
+    <!-- 作品展示区 -->
     <h1>欢迎查看我的作品</h1>
     <div class="gallery">
         <!-- 项目1 -->
-        <a href="project1.html"> <!-- 预留跳转链接 -->
+        <a href="https://www.zcool.com.cn/work/ZMzQ0NDUwMjQ=.html" target="_blank">
             <div class="project-item">
                 <img src="https://img.zcool.cn/community/0198715c91f8b0a801214168c893d1.jpg" alt="项目1">
                 <div class="project-text">
@@ -84,7 +131,7 @@
         </a>
 
         <!-- 项目2 -->
-        <a href="project2.html"> <!-- 预留跳转链接 -->
+        <a href="https://www.zcool.com.cn/work/ZMzQxMDI3ODg=.html" target="_blank">
             <div class="project-item">
                 <img src="https://img.zcool.cn/community/01070b5c8372cba801217ce6c6b79f.jpg" alt="项目2">
                 <div class="project-text">
@@ -96,7 +143,7 @@
         </a>
 
         <!-- 项目3 -->
-        <a href="project3.html"> <!-- 预留跳转链接 -->
+        <a href="https://www.zcool.com.cn/work/ZNjkyMDM2ODg=.html" target="_blank">
             <div class="project-item">
                 <img src="https://img.zcool.cn/community/66a9b18261b53wkapc12832159.png" alt="项目3">
                 <div class="project-text">
@@ -108,7 +155,7 @@
         </a>
 
         <!-- 项目4 -->
-        <a href="project4.html"> <!-- 预留跳转链接 -->
+        <a href="https://www.zcool.com.cn/work/ZNjgwMDEzNjQ=.html" target="_blank">
             <div class="project-item">
                 <img src="https://img.zcool.cn/community/031djl05sef42bxfbu5kpew3832.png" alt="项目4">
                 <div class="project-text">
@@ -120,7 +167,7 @@
         </a>
 
         <!-- 项目5 -->
-        <a href="project5.html"> <!-- 预留跳转链接 -->
+        <a href="https://www.zcool.com.cn/work/ZMjkxMDQyNjg=.html" target="_blank">
             <div class="project-item">
                 <img src="https://img.zcool.cn/community/0121625b5013e9a80121ade08c4b8a.jpeg" alt="项目5">
                 <div class="project-text">
@@ -132,7 +179,7 @@
         </a>
 
         <!-- 项目6 -->
-        <a href="project6.html"> <!-- 预留跳转链接 -->
+        <a href="https://www.zcool.com.cn/work/ZNjkwNzYyODA=.html" target="_blank">
             <div class="project-item">
                 <img src="https://img.zcool.cn/community/66949b69772bb2uhnkcr9a8903.png" alt="项目6">
                 <div class="project-text">
