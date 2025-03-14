@@ -25,11 +25,10 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-        .logo {
-            font-size: 24px;
-            font-weight: 600;
-            color: #000;
-            letter-spacing: 1px;
+        .logo img {
+            width: 50px; /* Logo 大小 */
+            height: 50px;
+            border-radius: 50%; /* 圆形Logo */
         }
         .nav {
             display: flex;
@@ -51,6 +50,8 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 40px; /* 图片间距 */
             padding: 0 40px 40px; /* 上下左右间距 */
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .project-item {
             position: relative;
@@ -94,8 +95,9 @@
         /* 响应式设计 */
         @media (max-width: 768px) {
             .gallery {
-                grid-template-columns: 1fr;
-                padding: 0 20px 20px;
+                grid-template-columns: 1fr; /* 手机端单列 */
+                gap: 20px; /* 手机端间距 */
+                padding: 0 20px 20px; /* 手机端边距 */
             }
             .header {
                 padding: 20px;
@@ -106,7 +108,10 @@
 <body>
     <!-- 顶部导航栏 -->
     <div class="header">
-        <div class="logo">友兮文化</div>
+        <div class="logo">
+            <!-- 临时Logo -->
+            <img src="https://via.placeholder.com/150" alt="友兮文化 Logo">
+        </div>
         <div class="nav">
             <a href="#work">Work</a>
             <a href="#about">About</a>
