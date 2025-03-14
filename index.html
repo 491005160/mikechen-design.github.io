@@ -54,8 +54,8 @@
         .gallery {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 0; /* 取消列间距 */
-            padding: 0; /* 取消父容器内边距 */
+            gap: 40px; /* 图片间距 */
+            padding: 40px; /* 父容器内边距 */
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -103,10 +103,11 @@
         @media (max-width: 768px) {
             .gallery {
                 grid-template-columns: 1fr !important; /* 强制单列 */
-                padding: 0 20px; /* 增加左右边距避免贴边 */
+                padding: 20px; /* 手机端边距 */
+                gap: 20px; /* 手机端图片间距 */
             }
             .project-item {
-                padding-bottom: 100%; /* 手机端调整为正方形或更高比例 */
+                padding-bottom: 56.25%; /* 手机端保持16:9比例 */
             }
             .header {
                 padding: 20px;
