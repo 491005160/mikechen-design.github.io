@@ -19,11 +19,11 @@
             position: relative;
             overflow: hidden;
             border-radius: 12px;
-            height: 400px;
+            height: 390px; /* 固定高度 */
             display: flex;
             align-items: center;
             justify-content: center;
-            background: white; /* 纯白背景 */
+            background: white;
         }
         .project-item img {
             width: 100%;
@@ -44,7 +44,7 @@
             opacity: 0; /* 默认隐藏 */
             transition: opacity 0.3s ease;
             padding: 20px;
-            color: #333; /* 深灰色文字 */
+            color: #333;
         }
         .project-item:hover .project-text {
             opacity: 1; /* 文字出现 */
@@ -52,7 +52,11 @@
         h3 {
             margin: 10px 0;
             font-size: 1.5em;
-            color: #000; /* 标题黑色 */
+            color: #000;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
         }
         @media (max-width: 768px) {
             .gallery {
@@ -68,64 +72,76 @@
     <h1>欢迎查看我的作品</h1>
     <div class="gallery">
         <!-- 项目1 -->
-        <div class="project-item">
-            <img src="https://img.zcool.cn/community/66aadea49b7bes92x6k5iw7007.jpg" alt="奥克斯橱柜灯-详情页设计">
-            <div class="project-text">
-                <h3>奥克斯橱柜灯</h3>
-                <p>详情页设计 | 2023年作品</p>
-                <p>采用极简风格，突出产品照明效果</p>
+        <a href="project1.html"> <!-- 预留跳转链接 -->
+            <div class="project-item">
+                <img src="https://img.zcool.cn/community/0198715c91f8b0a801214168c893d1.jpg" alt="项目1">
+                <div class="project-text">
+                    <h3>项目标题1</h3>
+                    <p>项目描述1</p>
+                    <p>点击查看详情</p>
+                </div>
             </div>
-        </div>
+        </a>
 
         <!-- 项目2 -->
-        <div class="project-item">
-            <img src="https://img.zcool.cn/community/66aadea49b7bes92x6k5iw7007.jpg" alt="项目2">
-            <div class="project-text">
-                <h3>智能家居APP</h3>
-                <p>移动端设计 | 2023年作品</p>
-                <p>简洁直观的交互体验</p>
+        <a href="project2.html"> <!-- 预留跳转链接 -->
+            <div class="project-item">
+                <img src="https://img.zcool.cn/community/01070b5c8372cba801217ce6c6b79f.jpg" alt="项目2">
+                <div class="project-text">
+                    <h3>项目标题2</h3>
+                    <p>项目描述2</p>
+                    <p>点击查看详情</p>
+                </div>
             </div>
-        </div>
+        </a>
 
         <!-- 项目3 -->
-        <div class="project-item">
-            <img src="https://img.zcool.cn/community/66aadea49b7bes92x6k5iw7007.jpg" alt="项目3">
-            <div class="project-text">
-                <h3>电商平台改版</h3>
-                <p>网页设计 | 2022年作品</p>
-                <p>提升用户购物体验</p>
+        <a href="project3.html"> <!-- 预留跳转链接 -->
+            <div class="project-item">
+                <img src="https://img.zcool.cn/community/66a9b18261b53wkapc12832159.png" alt="项目3">
+                <div class="project-text">
+                    <h3>项目标题3</h3>
+                    <p>项目描述3</p>
+                    <p>点击查看详情</p>
+                </div>
             </div>
-        </div>
+        </a>
 
         <!-- 项目4 -->
-        <div class="project-item">
-            <img src="https://img.zcool.cn/community/66aadea49b7bes92x6k5iw7007.jpg" alt="项目4">
-            <div class="project-text">
-                <h3>企业官网设计</h3>
-                <p>响应式设计 | 2022年作品</p>
-                <p>突出品牌形象</p>
+        <a href="project4.html"> <!-- 预留跳转链接 -->
+            <div class="project-item">
+                <img src="https://img.zcool.cn/community/031djl05sef42bxfbu5kpew3832.png" alt="项目4">
+                <div class="project-text">
+                    <h3>项目标题4</h3>
+                    <p>项目描述4</p>
+                    <p>点击查看详情</p>
+                </div>
             </div>
-        </div>
+        </a>
 
         <!-- 项目5 -->
-        <div class="project-item">
-            <img src="https://img.zcool.cn/community/66aadea49b7bes92x6k5iw7007.jpg" alt="项目5">
-            <div class="project-text">
-                <h3>数据可视化</h3>
-                <p>大屏设计 | 2021年作品</p>
-                <p>直观展示关键指标</p>
+        <a href="project5.html"> <!-- 预留跳转链接 -->
+            <div class="project-item">
+                <img src="https://img.zcool.cn/community/0121625b5013e9a80121ade08c4b8a.jpeg" alt="项目5">
+                <div class="project-text">
+                    <h3>项目标题5</h3>
+                    <p>项目描述5</p>
+                    <p>点击查看详情</p>
+                </div>
             </div>
-        </div>
+        </a>
 
         <!-- 项目6 -->
-        <div class="project-item">
-            <img src="https://img.zcool.cn/community/66aadea49b7bes92x6k5iw7007.jpg" alt="项目6">
-            <div class="project-text">
-                <h3>品牌VI设计</h3>
-                <p>视觉识别系统 | 2021年作品</p>
-                <p>统一品牌视觉语言</p>
+        <a href="project6.html"> <!-- 预留跳转链接 -->
+            <div class="project-item">
+                <img src="https://img.zcool.cn/community/66949b69772bb2uhnkcr9a8903.png" alt="项目6">
+                <div class="project-text">
+                    <h3>项目标题6</h3>
+                    <p>项目描述6</p>
+                    <p>点击查看详情</p>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 </body>
 </html>
