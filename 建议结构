@@ -1,0 +1,6 @@
+├── index.html         # 主页
+├── /projects         # 项目目录
+│   └── project1.md   # 项目说明
+├── /assets           # 资源文件
+│   ├── css/style.css
+│   └── js/script.js
