@@ -21,13 +21,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 40px;
-            background: white;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .logo {
             font-size: 24px;
@@ -53,14 +49,17 @@
         .gallery {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 0; /* 无间距 */
-            margin-top: 80px; /* 为顶部导航栏留出空间 */
+            gap: 40px; /* 图片间距 */
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px 40px; /* 上下左右间距 */
         }
         .project-item {
             position: relative;
             overflow: hidden;
-            height: 50vh; /* 每张图片占屏幕高度的一半 */
-            background: #f5f5f5; /* 图片加载前的背景色 */
+            height: 0;
+            padding-bottom: 56.12%; /* 1700x954比例 */
+            background: white; /* 白色背景 */
         }
         .project-item img {
             width: 100%;
@@ -98,12 +97,10 @@
         @media (max-width: 768px) {
             .gallery {
                 grid-template-columns: 1fr;
-            }
-            .project-item {
-                height: 50vh; /* 手机端每张图片占屏幕高度的一半 */
+                padding: 0 20px 20px;
             }
             .header {
-                padding: 15px 20px;
+                padding: 20px;
             }
         }
     </style>
